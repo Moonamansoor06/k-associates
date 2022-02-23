@@ -1,21 +1,24 @@
 import * as React from "react"
 import { StaticQuery, graphql } from 'gatsby';
-import HomeComponent from '../components/HomeComponent'
+import AboutComponent from '../components/AboutComponent'
 import Layout from "../components/layout";
-import Header from '../components/header'
 
-const IndexPage = () => {
+
+const About = () => {
   return (
     <StaticQuery
       query={graphql`
      query {
-      allContentfulCompany(filter: {company: {eq: "kaaf-associates"}, slug: {}}) {
+      allContentfulCompany(filter: {company: {eq: "kaaf-associates"}}) {
     edges {
       node {
         company
         slug
-        description {
-          raw
+        vision
+        mission
+        objectives
+        aboutImage{
+         gatsbyImageData(layout: FIXED)
         }
       }
     }
@@ -31,8 +34,8 @@ const IndexPage = () => {
         return (
 
           <Layout>
-            <Header />
-            <HomeComponent data={data} />
+          
+            <AboutComponent data={data} />
 
           </Layout>
 
@@ -43,4 +46,4 @@ const IndexPage = () => {
 
 
 
-export default IndexPage
+export default About

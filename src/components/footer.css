@@ -1,0 +1,29 @@
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    display:flex;
+    align-items:space-between;
+    justify-content:space-between;
+    background-color:black;
+    color:white;
+    padding:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.addressDiv{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    align-items:left;
+}
+.lineHeight{
+    line-height:.25rem;
+}
+.socialLinks{
+    display:flex;
+    flex-direction:column;
+    align-self:right;
+    justify-content:right;
+    align-items:right
+}

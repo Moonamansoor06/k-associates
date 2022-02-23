@@ -1,0 +1,27 @@
+.main {
+    position: static;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+  
+  .logoImgDiv {
+    width: 200px;
+    opacity: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+  }
+  .navMain {
+    padding-top: 29x;
+    padding-bottom: 2px;
+    opacity: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+  }
+  
