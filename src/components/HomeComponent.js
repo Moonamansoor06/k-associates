@@ -1,32 +1,37 @@
+/** @jsxImportSource theme-ui */
 import React from 'react'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { StaticImage } from "gatsby-plugin-image"
-import './homeComponent.css'
+import {Card, Grid,Text} from 'theme-ui'
+//import './homeComponent.css'
 
 const HomeComponent = ({ data }) => {
     console.log('data is from HC =>',data)
     const company = data.allContentfulCompany.edges[0].node
 
     return (
-        <div className="homeConatiner">
-            <div className="homeTab1">
-                <div >
-                    <h2 className="homeTab2">
-                        {company.name}
+        <div sx={{marginTop:'40px'}} className="homeConatiner">
+            <Grid column={2} width={'40%'} className="homeTab1">
+                <Card >
+                    <h2 sx={{variant:'styles.h2',marginTop:'40px',fontSize:['20px','36px']}} className="homeTab2">
+                        {company.company}
                     </h2>
-                    <p className="homeText">
+                    <Text sx={{font:'fonts.body',
+                    fontWeight:'fontWeights.body',
+                     lineHeight:'lineHeight.body',fontSize:['12px','24px']}}
+                      className="homeText">
                         {renderRichText(company.description)}
-                    </p>
-                </div>
-            </div>
-            <div className="homeImage">
+                        </Text>
+                    </Card>
+            
+            <Card sx={{display:'flex',alignItems:'center'}} className="homeImage">
                 <StaticImage src="../images/renovate.jpg"
                     alt=""
                     placeholder="blurred"
 
                 />
-
-            </div>
+</Card>
+            </Grid>
         </div>
 
     )

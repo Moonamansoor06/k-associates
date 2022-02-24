@@ -80,6 +80,25 @@ const theme = {
             
         },
       },
+      text: {
+        heading: {
+          fontFamily: 'heading',
+          fontWeight: 'heading',
+          lineHeight: 'heading',
+          letterSpacing: 'heading',
+        },
+        display: {
+          fontFamily: 'heading',
+          fontWeight: 'heading',
+          lineHeight: 'heading',
+          letterSpacing: 'heading',
+          fontSize: [ 5, 6, 7 ],
+        },
+        caps: {
+          textTransform: 'uppercase',
+          letterSpacing: 'caps',
+        },
+      },
     styles: {
         root: {
 
@@ -100,7 +119,8 @@ const theme = {
             fontFamily: 'heading',
             lineHeight: 'heading',
             fontWeight: 'heading',
-            fontSize: 4
+            fontSize: 4,
+            textTransform:'uppercase'
         },
         h3: {
             color: 'text',
@@ -152,7 +172,26 @@ const theme = {
             maxWidth: '100%'
         },
       
-    }
+    }, 
+    text: {
+        heading: {
+          fontFamily: 'heading',
+          fontWeight: 'heading',
+          lineHeight: 'heading',
+          letterSpacing: 'heading',
+        },
+        display: {
+          fontFamily: 'heading',
+          fontWeight: 'heading',
+          lineHeight: 'heading',
+          letterSpacing: 'heading',
+          fontSize: [ 5, 6, 7 ],
+        },
+        caps: {
+          textTransform: 'uppercase',
+          letterSpacing: 'caps',
+        },
+      },
 }
 
 

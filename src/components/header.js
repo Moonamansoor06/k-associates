@@ -8,7 +8,7 @@ const Header = () => {
     <StaticQuery
       query={graphql`{
   allFile(
-    filter: {extension: {regex: "/(jpg)|(jpeg)/"}, relativeDirectory: {eq: "designs"}}
+    filter: {extension: {regex: "/(jpg)|(jpeg)|(jfif)/"}, relativeDirectory: {eq: "designs"}}
   ) {
     edges {
       node {

@@ -6,14 +6,14 @@ function ImgRotator({ data }) {
    const allImages = data.allFile.edges;
    const [currentImage, setCurrentImage] = useState({});
     var num = 0
-   
+   const imgLenth=allImages.length;
  
    useEffect(() => {
       const interval = setInterval(() => {
 
          setCurrentImage(allImages[num].node.childImageSharp.gatsbyImageData)
       
-         num < 4 ? num++ : num = 0;
+         num < imgLenth-1 ? num++ : num = 0;
     
       }, 5000);
       return () => clearInterval(interval);
@@ -25,7 +25,7 @@ function ImgRotator({ data }) {
          key={num}
          alt=""
          loading="eager"
-         style={{width:'100%',height:'400px'}} />
+         style={{width:'100%',height:'auto'}} />
    );
 }
 
