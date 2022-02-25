@@ -1,4 +1,4 @@
-import * as React from "react"
+import  React from "react"
 import { StaticQuery, graphql } from 'gatsby';
 import HomeComponent from '../components/HomeComponent'
 import Layout from "../components/layout";
