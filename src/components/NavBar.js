@@ -5,6 +5,7 @@ import { Flex } from 'theme-ui'
 import LogoComponent from './logoComponent'
 import './navbar.css'
 
+
 const NavBar = () => {
   return (
     <div className="main">
