@@ -3,14 +3,12 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.x"
-  },
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.17.2",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@loadable/component": "^5.15.2",
     "@mdx-js/react": "^2.0.0",
     "dotenv": "^16.0.0",
     "gatsby": "^4.7.2",
