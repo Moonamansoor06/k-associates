@@ -31,7 +31,8 @@ const IndexPage = () => {
         return (
 
           <Layout>
-     
+            <Header />
+            
             <HomeComponent data={data} />
 
           </Layout>
