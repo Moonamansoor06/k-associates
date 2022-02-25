@@ -32,7 +32,6 @@ const IndexPage = () => {
 
           <Layout>
      
-            
             <HomeComponent data={data} />
 
           </Layout>
