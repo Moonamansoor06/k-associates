@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+.navLinks{
+    display:flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.homeLinks{
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  color: darkblue;
+}

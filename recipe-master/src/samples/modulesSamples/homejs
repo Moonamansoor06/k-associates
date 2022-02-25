@@ -1,0 +1,18 @@
+import React from 'react'
+import {Link} from 'gatsby'
+import Layout from '../../components/Layout'
+//import {body, homeLinks,navLinks} from '../pages/home.module.css'
+
+export default function home() {
+    return (
+        <Layout>
+            <div className={body}>
+            <h1>Home </h1>
+            
+            <Link to='about'>About</Link>
+            <Link to='company/history'>Company History</Link>
+            <Link to='contact'>Contact us</Link>
+            </div>
+        </Layout>
+    )
+}
