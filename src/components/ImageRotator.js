@@ -13,7 +13,7 @@ function ImgRotator({ data }) {
 
          setCurrentImage(allImages[num].node.childImageSharp.gatsbyImageData)
       
-         num < 20 ? num++ : num = 0;
+         num < 8 ? num++ : num = 0;
     
       }, 5000);
       return () => clearInterval(interval);
