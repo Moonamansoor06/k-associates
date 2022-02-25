@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <div className='addressDiv'>
-            <h5 >Address: A-381,Shadmaan block 15</h5>
+            <h5 >Address: Shadmaan block 15</h5>
             <h5 className='lineHeight' >Phone: +923122594945</h5>
         </div>
         <div className="socialLinks">

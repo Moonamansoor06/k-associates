@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage,getImage } from "gatsby-plugin-image";
 
 
 const LogoComponent = () => {
@@ -23,14 +23,14 @@ const LogoComponent = () => {
 }
 `}
       render={data => {
-        const logoImage=data.allFile.edges[0].node.childrenImageSharp[0].gatsbyImageData
+        /* const logoImage=data.allFile.edges[0].node.childrenImageSharp[0].gatsbyImageData
         console.log('image data', data)
-        console.log('logo image data', logoImage)
+         console.log('logo image data', logoImage)*/
         return (
       
            
        <GatsbyImage
-          image={logoImage}
+          image={getImage(data.allFile.edges[0].node.childrenImageSharp[0].gatsbyImageData)}
                     alt=""
           loading="eager"
          />
