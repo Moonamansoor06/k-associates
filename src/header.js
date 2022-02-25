@@ -8,13 +8,14 @@ const Header = () => {
   return (
     <StaticQuery
       query={graphql`{
-  allFile(
+    allFile(
     filter: {extension: {regex: "/(jpg)|(jpeg)/"}, relativeDirectory: {eq: "designs"}}
+    limit: 10
   ) {
     edges {
       node {
         childImageSharp {
-          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          gatsbyImageData(quality: 100)
         }
       }
     }
