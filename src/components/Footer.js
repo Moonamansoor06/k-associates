@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div  sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           alignItems: "right",
           justifyContent: "right",
         }}  className="socialLinks">
