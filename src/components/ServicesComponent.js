@@ -17,6 +17,7 @@ const ServicesComponent = ({ data }) => {
         alignContent:'center',
         marginLeft:'20px',
         padding:'20px',
+        gridTemplateColumns: ["auto", "1fr 1fr"] 
         }} columns={3}>
          
          {Services.map(({ node }) => {

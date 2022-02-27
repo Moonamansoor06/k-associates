@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 function ImgRotator({ data }) {
  
-   const allImages = data.allFile.edges;
+   const allImages = data.edges;
    const [currentImage, setCurrentImage] = useState({});
     var num = 0
    //const imgLenth=allImages.length;
@@ -13,7 +13,7 @@ function ImgRotator({ data }) {
 
          setCurrentImage(allImages[num].node.childImageSharp.gatsbyImageData)
       
-         num < 4 ? num++ : num = 0;
+         num < 10 ? num++ : num = 0;
     
       }, 5000);
       return () => clearInterval(interval);
