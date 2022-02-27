@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage,getImage } from "gatsby-plugin-image";
 
 function ImgRotator({ data }) {
  
@@ -11,7 +11,7 @@ function ImgRotator({ data }) {
    useEffect(() => {
       const interval = setInterval(() => {
 
-         setCurrentImage(allImages[num].node.childImageSharp.gatsbyImageData)
+         setCurrentImage(getImage(allImages[num].node.childImageSharp.gatsbyImageData))
       
          num < 10 ? num++ : num = 0;
     
