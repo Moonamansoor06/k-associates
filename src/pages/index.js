@@ -21,7 +21,6 @@ const IndexPage = () => {
       }
     }
 }
-
 allFile(
     filter: {extension: {regex: "/(jpg)|(jpeg)/"}, relativeDirectory: {eq: "designs"}}
   ) {
