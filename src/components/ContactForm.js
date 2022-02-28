@@ -1,20 +1,24 @@
+/** @jsxImportSource theme-ui */
 import React from 'react'
-
-import {Box} from 'theme-ui'
+import {Card} from 'theme-ui'
 
 
 export default function ContactForm() {
   return (
-    
-      <Box p={2}  style={{display:'block',marginLeft:'500px'}}>
-      <h1>Contact</h1>
+    <div sx={{marginLeft:'30%',marginTop:'8%',marginBottom:'8%'}}>
+    <Card sx={{variant:'cards.compact',
+    display:'flex',
+    flexDirection:'column',
+    alignItems:'center',alignContent:'center'
+    ,width:'350px',height:'auto'}}>
+      <h3 sx={{marginTop:'10px'}}>Contact us</h3>
       <form
         name="contact"
         method="post"
         action="/thanks/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        
+        sx={{display:'flex', flexDirection:'column' ,alignItems:'center',alignContent:'center'}}
       >
 
         <input type="hidden" name="form-name" value="contact" />
@@ -45,9 +49,10 @@ export default function ContactForm() {
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button sx={{color:'white',backgroundColor:'black',alignSelf:'center'}} type="submit">Send</button>
         </p>
       </form>
-      </Box>
+      </Card>
+      </div>
       )
 }
