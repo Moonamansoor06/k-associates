@@ -22,6 +22,7 @@ const HomeComponent = ({ data }) => {
         <Card>
           <h2
             sx={{
+              width:'auto',
               variant: "styles.h2",
               marginTop: "40px",
               fontSize: ["20px", "36px"],
@@ -32,6 +33,11 @@ const HomeComponent = ({ data }) => {
           </h2>
           <Text
             sx={{
+                lineHeight: "2rem",
+                letterSpacing: "2px",
+                display: "block",
+                textAlign: "justify",
+                fontSize:'20px',
               font: "fonts.body",
               fontWeight: "fontWeights.body",
               lineHeight: "lineHeight.body",
