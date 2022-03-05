@@ -9,12 +9,16 @@ import ImgRotator from "./ImageRotator"
 const HomeComponent = ({ data }) => {
   console.log("data is from HC =>", data)
   const company = data.allContentfulCompany.edges[0].node
-  const headerData=data.allFile
+  const headerData = data.allFile
   return (
-    <div sx={{ marginTop: "40px", }} className="homeConatiner">
+    <div sx={{ marginTop: "40px" }} className="homeConatiner">
       <ImgRotator data={headerData} />
       <Grid
-        sx={{ gridTemplateColumns: ["auto", "1fr 1fr"] ,marginTop:'10%', marginBottom:'10%'}}
+        sx={{
+          gridTemplateColumns: ["auto", "1fr 1fr"],
+          marginTop: "10%",
+          marginBottom: "10%",
+        }}
         column={2}
         width={"40%"}
         className="homeTab1"
@@ -22,7 +26,7 @@ const HomeComponent = ({ data }) => {
         <Card>
           <h2
             sx={{
-              width:'auto',
+              width: "auto",
               variant: "styles.h2",
               marginTop: "40px",
               fontSize: ["20px", "36px"],
@@ -33,11 +37,10 @@ const HomeComponent = ({ data }) => {
           </h2>
           <Text
             sx={{
-                lineHeight: "2rem",
-                letterSpacing: "2px",
-                display: "block",
-                textAlign: "justify",
-                fontSize:'20px',
+              lineHeight: "2rem",
+              letterSpacing: "2px",
+              display: "block",
+              textAlign: "justify",
               font: "fonts.body",
               fontWeight: "fontWeights.body",
               lineHeight: "lineHeight.body",
