@@ -27,8 +27,8 @@ const AboutComponent = ({ data }) => {
         <h2>Vision</h2>
         <p
           sx={{
-            lineHeight: "2rem",
-            letterSpacing: "2px",
+            lineHeight: "1rem",
+            letterSpacing: "1px",
             display: "block",
             textAlign: "justify",
             fontSize:'20px'

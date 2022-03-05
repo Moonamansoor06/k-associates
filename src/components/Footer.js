@@ -6,13 +6,15 @@ const Footer = () => {
         <div as='footer' className='footer'sx={{
             paddingTop: "29px",
             paddingBottom: "2px",
-            
+            width:"100%",
+          height:"auto"  
           }}>
             <div
   sx={{
     display: 'grid',
     gridGap: 4,
     gridTemplateColumns: ['auto', '2fr 1fr'],
+  height:'auto'
   }}>
             <div className='addressDiv'>
             <h5 >Address: Shadmaan block 15</h5>
@@ -23,6 +25,7 @@ const Footer = () => {
           flexDirection: "column",
           alignItems: "right",
           justifyContent: "right",
+
         }}  className="socialLinks">
             <h5 >Email Address: kaafassociates@gmail.com</h5>
             <h5 className='lineHeight'>

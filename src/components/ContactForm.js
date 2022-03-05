@@ -5,7 +5,7 @@ import {Card} from 'theme-ui'
 
 export default function ContactForm() {
   return (
-    <div sx={{marginLeft:'30%',marginTop:'8%',marginBottom:'8%'}}>
+    <div sx={{justifyContent:"center",marginTop:'8%',marginBottom:'8%'}}>
     <Card sx={{variant:'cards.compact',
     display:'flex',
     flexDirection:'column',

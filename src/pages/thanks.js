@@ -16,7 +16,7 @@ const Thanks = () => {
           flexDirection: "column",
           aligItems: "center",
           alignContent: "center",
-          marginLeft: "10%",
+          justifyContent:"center",
         }}
       >
         <Card

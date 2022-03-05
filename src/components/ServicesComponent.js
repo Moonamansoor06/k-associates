@@ -9,7 +9,7 @@ import { Grid, Card } from "@theme-ui/components"
 const ServicesComponent = ({ data }) => {
   const Services = data.allContentfulServices.edges
   return (
-    <div sx={{marginTop:'20px',marginBottom:'20px',width:'100%', display:'flex', flexDirection:'column', alignContent:'center',alignItems:'center'}} className="servicesContainer">
+    <div sx={{marginTop:'20px',marginBottom:'20px',width:'100%', display:'flex', flexDirection:'column', alignContent:'center',alignItems:'center',justifyContent:"center"}} className="servicesContainer">
      <div >
           <h1 sx={{marginTop:'10px',padding:'2px'}}>Services</h1>
           </div>
