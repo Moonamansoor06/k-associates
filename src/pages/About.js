@@ -15,7 +15,9 @@ const About = () => {
         company
         slug
         vision
-        mission
+        mission{
+          raw
+        }
         objectives
         aboutImage{
          gatsbyImageData(layout: FIXED)

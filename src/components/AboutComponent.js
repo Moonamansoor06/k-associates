@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React from 'react'
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./aboutComponent.css"
 
@@ -46,7 +47,7 @@ const AboutComponent = ({ data }) => {
             fontSize:'20px'
           }}
         >
-          {About.mission}
+          {renderRichText(About.mission)}
         </p>
         <h2>Objectives</h2>
         <div
