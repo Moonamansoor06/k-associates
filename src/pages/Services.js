@@ -14,7 +14,7 @@ const Services = () => {
         slug
         service
         image {
-          gatsbyImageData(layout: FIXED)
+          gatsbyImageData(width: 350, height: 330)
         }
       }
     }
