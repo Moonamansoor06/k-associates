@@ -43,7 +43,7 @@ const AboutComponent = ({ data }) => {
         <h2>Vision</h2>
         <p
           sx={{
-            lineHeight: "1rem",
+            lineHeight: "2 rem",
             letterSpacing: "1px",
             display: "block",
             textAlign: "justify",
