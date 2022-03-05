@@ -5,12 +5,12 @@ import {Card} from 'theme-ui'
 
 export default function ContactForm() {
   return (
-    <div sx={{justifyContent:"center",marginTop:'8%',marginBottom:'8%'}}>
+    <div >
     <Card sx={{variant:'cards.compact',
-    display:'flex',
+    display:'flex', justifyContent:'center',
     flexDirection:'column',
     alignItems:'center',alignContent:'center'
-    ,width:'350px',height:'auto'}}>
+    ,width:'auto',height:'auto'}}>
       <h3 sx={{marginTop:'10px'}}>Contact us</h3>
       <form
         name="contact"
@@ -18,7 +18,7 @@ export default function ContactForm() {
         action="/thanks/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        sx={{display:'flex', flexDirection:'column' ,alignItems:'center',alignContent:'center'}}
+        sx={{padding:'10px',border:'.5px solid gray',display:'flex', flexDirection:'column' ,alignItems:'center',alignContent:'center'}}
       >
 
         <input type="hidden" name="form-name" value="contact" />
