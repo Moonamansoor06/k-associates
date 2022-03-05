@@ -15,6 +15,7 @@ const IndexPage = () => {
       node {
         company
         slug
+        team
         description {
           raw
         }

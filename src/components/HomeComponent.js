@@ -50,6 +50,28 @@ const HomeComponent = ({ data }) => {
           >
             {renderRichText(company.description)}
           </Text>
+          <Text
+            sx={{
+              lineHeight: "2rem",
+              letterSpacing: "2px",
+              display: "block",
+              textAlign: "justify",
+              font: "fonts.body",
+              fontWeight: "fontWeights.body",
+              lineHeight: "lineHeight.body",
+              fontSize: ["12px", "24px"],
+            }}
+            className="homeText"
+          >
+
+          {company.team.map((abt, ind) => {
+            return (
+              <ul>
+                <li>{abt}</li>
+              </ul>
+            )
+          })}
+          </Text>
         </Card>
 
         <Card
