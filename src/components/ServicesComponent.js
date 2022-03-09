@@ -28,7 +28,7 @@ const ServicesComponent = ({ data }) => {
               display:'flex',
               flexDirection:'column',
               alignItems:'center',alignContent:'center'
-              ,width:'350px',height:'400px'}} key={node.slug}>
+              ,width:'450px',height:'400px'}} key={node.slug}>
                 <h3 itemProp="headline">{node.service}</h3>
                 <div className="serviceImage">
                   <GatsbyImage image={getImage(node.image)} alt={node.slug} />

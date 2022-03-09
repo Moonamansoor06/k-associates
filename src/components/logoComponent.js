@@ -9,7 +9,7 @@ const LogoComponent = () => {
     <StaticQuery
       query={graphql`{
  allFile(
-    filter: {relativeDirectory: {eq: "mainLogo"}, name: {eq: "image"}, extension: {eq: "png"}}
+    filter: {relativeDirectory: {eq: "mainLogo"}, name: {eq: "mainLogo"}, extension: {eq: "jpg"}}
   ) {
     edges {
       node {

@@ -26,8 +26,8 @@ const Footer = () => {
   height:'auto'
   }}> */}
       <div className="addressDiv">
-        <h5>Address: Shadmaan block 15</h5>
-        <h5 className="lineHeight">Phone: +923122594945</h5>
+        <h5>Address: Shadmaan block 14</h5>
+        <h5 className="lineHeight">Phone: 03061115223</h5>
       </div>
       <div sx={{alignSelf:'right'}} className="socialLinks">
         <h5>Email Address: kaafassociates@gmail.com</h5>

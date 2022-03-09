@@ -8,13 +8,13 @@ const Services = () => {
     <StaticQuery
       query={graphql`
      query { 
-        allContentfulServices {
+        allContentfulServices(sort: {fields: serial, order: ASC}) {
     edges {
       node {
         slug
         service
         image {
-          gatsbyImageData(width: 350, height: 330)
+          gatsbyImageData(width: 450, height: 330)
         }
       }
     }
