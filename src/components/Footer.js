@@ -7,35 +7,33 @@ const Footer = () => {
             paddingTop: "29px",
             paddingBottom: "2px",
             width:"100%",
-          height:"auto"  
+          height:"auto"  ,
+          display: "flex",
+          flexDirection: "row",
+          display: 'grid',
+          gridGap: 4,
+          gridTemplateColumns: ['auto', '1fr 2fr'],
+          
           }}>
-            <div
+           {/*  <div
   sx={{
     display: 'grid',
     gridGap: 4,
     gridTemplateColumns: ['auto', '2fr 1fr'],
- 
-  }}>
+  height:'auto'
+  }}> */}
             <div className='addressDiv'>
             <h5 >Address: Shadmaan block 15</h5>
             <h5 className='lineHeight' >Phone: +923122594945</h5>
         </div>
-        <div  sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "right",
-          justifyContent: "right",
-          height:'auto',
-          width:'auto'
-
-        }}  className="socialLinks">
+        <div   className="socialLinks">
             <h5 >Email Address: kaafassociates@gmail.com</h5>
-            <h5 className='lineHeight'>
-            Facebook: <a sx={{color:'white'}} href=" https://www.facebook.com/Kaaf-Associates-109103114998403/">
-                 @Kaaf-Associates</a> </h5>
+            <h5   sx={{height:'auto'}} className='lineHeight'>
+              Facebook:  <a sx={{color:'white'}} href=" https://www.facebook.com/Kaaf-Associates-109103114998403/">
+              @kaafassociates</a> </h5>
         </div>
         </div>
-        </div>
+      //  </div>
     )
 }
 
