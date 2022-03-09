@@ -14,7 +14,7 @@ const Footer = () => {
     display: 'grid',
     gridGap: 4,
     gridTemplateColumns: ['auto', '2fr 1fr'],
-  height:'auto'
+ 
   }}>
             <div className='addressDiv'>
             <h5 >Address: Shadmaan block 15</h5>
@@ -25,12 +25,14 @@ const Footer = () => {
           flexDirection: "column",
           alignItems: "right",
           justifyContent: "right",
+          height:'auto',
+          width:'auto'
 
         }}  className="socialLinks">
             <h5 >Email Address: kaafassociates@gmail.com</h5>
             <h5 className='lineHeight'>
-                <a sx={{color:'white'}} href=" https://www.facebook.com/Kaaf-Associates-109103114998403/">
-                Facebook: https://www.facebook.com/Kaaf-Associates</a> </h5>
+            Facebook: <a sx={{color:'white'}} href=" https://www.facebook.com/Kaaf-Associates-109103114998403/">
+                 @Kaaf-Associates</a> </h5>
         </div>
         </div>
         </div>
