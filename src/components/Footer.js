@@ -15,7 +15,7 @@ const Footer = () => {
         flexDirection: "row",
         display: "grid",
         gridGap: 4,
-        gridTemplateColumns: ["20% 30%"],
+        gridTemplateColumns: ["30% 30%"],
       }}
     >
       {/*  <div
