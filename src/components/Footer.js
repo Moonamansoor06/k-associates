@@ -15,21 +15,25 @@ const Footer = () => {
         flexDirection: "row",
         display: "grid",
         gridGap: 4,
-        gridTemplateColumns: ["30% 30%"],
+      
       }}
     >
-      {/*  <div
-  sx={{
-    display: 'grid',
-    gridGap: 4,
-    gridTemplateColumns: ['auto', '2fr 1fr'],
-  height:'auto'
-  }}> */}
-      <div className="addressDiv">
+      <div sx={{
+       
+        height: "auto",
+        display: "flex",
+        flexDirection: "column",
+       
+     }}
+      className="addressDiv">
         <h5>Address: Shadmaan block 14</h5>
         <h5 className="lineHeight">Phone: 03061115223</h5>
       </div>
-      <div sx={{alignSelf:'right'}} className="socialLinks">
+      <div sx={{
+        height: "auto",
+       display: "flex",
+       flexDirection: "column",
+      alignSelf:'right'}} className="socialLinks">
         <h5>Email Address: kaafassociates@gmail.com</h5>
         <h5 sx={{ height: "auto" }} className="lineHeight">
           Facebook:{" "}
@@ -38,11 +42,11 @@ const Footer = () => {
             href=" https://www.facebook.com/Kaaf-Associates-109103114998403/"
           >
             @kaafassociates
-          </a>{" "}
+          </a>
         </h5>
       </div>
     </div>
-    //  </div>
+
   )
 }
 

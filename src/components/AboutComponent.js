@@ -16,7 +16,7 @@ const AboutComponent = ({ data }) => {
         sx={{
           marginTop: "20px",
           marginBottom: "20px",
-          width: "100%",
+      
           height: "auto",
           display: "flex",
           flexDirection: "column",
@@ -46,54 +46,52 @@ const AboutComponent = ({ data }) => {
             lineHeight: "2 rem",
             letterSpacing: "1px",
             display: "block",
-            textAlign: "justify",
             fontSize: "20px",
           }}
         >
           {About.vision}
         </p>
-        <h2
+        </div>
+        <div sx={{
+           width: "90%",
+            marginLeft: "40px", 
+            marginRight: "40px" }}>
+        <h2>Mission</h2>
+     <p
           sx={{
-            lineHeight: "2rem",
-            letterSpacing: "2px",
+            lineHeight: "2 rem",
+            letterSpacing: "1px",
             display: "block",
-            textAlign: "justify",
-            fontSize: ["12px", "24px"],
-          }}
-        >
-          Mission
-        </h2>
-        <p
-          sx={{
-            lineHeight: "2rem",
-            letterSpacing: "2px",
-            display: "block",
-            textAlign: "justify",
             fontSize: "20px",
           }}
         >
           {renderRichText(About.mission)}
         </p>
-        <h2>Objectives</h2>
+        </div>
+       
         <div
-          sx={{
-            lineHeight: "2rem",
-            letterSpacing: "2px",
-            display: "block",
-            textAlign: "justify",
-            fontSize: "20px",
-          }}
-        >
+         sx={{
+          width: "90%",
+           marginLeft: "40px", 
+           marginRight: "40px" }}
+        > 
+        <h2>Objectives</h2>
+
           {About.objectives.map((abt, ind) => {
             return (
-              <ul>
+              <ul sx={{
+                lineHeight: "2 rem",
+                letterSpacing: "1px",
+                display: "block",
+                fontSize: "20px",
+              }}>
                 <li>{abt}</li>
               </ul>
             )
           })}
         </div>
       </div>
-    </div>
+
   )
 }
 
