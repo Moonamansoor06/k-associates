@@ -13,8 +13,7 @@ const Footer = () => {
         height: "auto",
         display: "flex",
         flexDirection: "row",
-        display: "grid",
-        gridGap: 4,
+       
       
       }}
     >
